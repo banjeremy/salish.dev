@@ -1,4 +1,21 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+import createMDX from '@next/mdx';
+import rehypePrism from '@mapbox/rehype-prism';
+import remarkGfm from 'remark-gfm';
 
-export default nextConfig;
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Configure `pageExtensions` to include markdown and MDX files
+  pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
+  // Optionally, add any other Next.js config below
+};
+
+const withMDX = createMDX({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: [rehypePrism],
+  },
+});
+
+// Merge MDX config with Next.js config
+export default withMDX(nextConfig);
