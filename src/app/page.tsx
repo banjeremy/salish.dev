@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import portraitImage from '@/images/portrait.jpg';
 import { Container } from '@/components/Container';
-import AboutMe, { title } from '@/components/AboutMe.mdx';
+import AboutMe from '@/components/AboutMe.mdx';
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            {title}
+            I&rsquo;m Jeremy Jones. I build fine apps for the web and iOS.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <AboutMe />
