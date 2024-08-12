@@ -2,13 +2,14 @@ import Image from 'next/image';
 import portraitImage from '@/images/portrait.jpg';
 import { Container } from '@/components/Container';
 import AboutMe from '@/components/AboutMe.mdx';
+import EmploymentHistory from '../components/EmploymentHistory';
 
 export default function Home() {
   return (
     <Container className="mt-8 sm:mt-16">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
         <div className="lg:pl-20">
-          <div className="max-w-xs px-2.5 lg:max-w-[300px]">
+          <div className="max-w-xs px-2.5 lg:max-w-[300px] lg:float-end">
             <Image
               src={portraitImage}
               alt=""
@@ -24,6 +25,9 @@ export default function Home() {
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <AboutMe />
           </div>
+        </div>
+        <div className="lg:pl-20 mt-8">
+          <EmploymentHistory />
         </div>
       </div>
     </Container>
