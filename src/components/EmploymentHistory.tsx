@@ -1,7 +1,7 @@
 import employmentHistory from '../data/employment-history';
 import EmploymentHistoryItem from './EmploymentHistoryItem';
 
-const EmploymentHistory = (props) => {
+const EmploymentHistory = (props: any) => {
   return (
     <ol {...props}>
       {employmentHistory.map((position) => (
