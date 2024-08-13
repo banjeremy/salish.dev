@@ -27,7 +27,7 @@ const EmploymentHistoryItem = ({ position }: EmploymentHistoryItemProps) => {
                 rel="noreferrer noopener"
                 aria-label={`${position.title} at ${position.company} (opens in a new tab)`}
               >
-                <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block -z-10"></span>
                 <span>
                   {position.title} ·{' '}
                   <span className="inline-block">
