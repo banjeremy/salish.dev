@@ -14,6 +14,7 @@ const employmentHistory = [
       'Next.js',
       'React',
       'Typescript',
+      'GraphQL',
     ],
   },
   {
@@ -28,6 +29,7 @@ const employmentHistory = [
       'Typescript',
       'GraphQL',
       'NodeJS',
+      'Prisma',
       'RedwoodJS',
       'AWS',
       'Swift',
@@ -44,7 +46,9 @@ const employmentHistory = [
     technologies: [
       'React',
       'Typescript',
+      'GraphQL',
       'Node.js',
+      'Prisma',
       'Python',
       'Azure',
       'Spark',
